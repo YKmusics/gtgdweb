@@ -1,0 +1,65 @@
+.content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+p {
+  opacity: 0.7;
+  font-size: 17px !important;
+}
+
+p.small {
+  font-size: 12px !important;
+}
+
+button {
+  width: 100%;
+}
+
+p.mentionrequired::before {
+  content: "* ";
+  color: red;
+}
+
+p.required::after {
+  content: "*";
+  color: red;
+}
+
+input {
+  width: 100% !important;
+}
+
+.picker {
+  background: #292929;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+textarea {
+	width: 100% !important;
+}
+
+input[type="password"] {
+	background: var(--secondary-color-hover);
+	display: block;
+	margin-top: 20px;
+	padding-left: 8px;
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	font-family: var(--font-family);
+	font-size: 18px;
+	transition: 0.3s;
+	color: var(--primary-text-color);
+}
+
+input[type="password"]::placeholder, textarea::placeholder {
+	color: var(--secondary-text-color);
+}
+
+input[type="password"] {
+	width: 300px;
+	height: 40px;
+}

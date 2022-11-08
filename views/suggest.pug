@@ -1,0 +1,23 @@
+include head.pug
+div.content
+  h3 Suggestion form
+  p.mentionrequired Required
+  br
+  form(method="post" action="https://gtgd.ddevs.repl.co/suggestionPost")
+    p.required Suggestion type
+    <label for="cars">Choose a type:</label>
+
+    <select name="type" id="type" required>
+  <option value="Custom Item">Custom Item</option>
+  <option value="Bug Report">Bug Report</option>
+  <option value="Other">Other</option>
+    </select>
+    p.required Title
+    input(id="title" type="text" name="title" placeholder="Title" required)
+    p.required GrowDarkenID
+    input(id="title" type="text" name="growid" placeholder="GTGDID" required)
+    p.small If you don't pass your actual username, your suggestion will be terminated by the system. If you keep repeating same behavior you will get punished.
+    p.required Describe your suggestion.
+    textarea(name="description" placeholder="Description" required)
+    br
+    <button type="submit"><i class="fa fa-share"></i>&nbsp; Suggest</button>

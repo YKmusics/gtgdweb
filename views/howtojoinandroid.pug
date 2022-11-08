@@ -1,0 +1,29 @@
+include head.pug
+div.content
+  h3 Joining Grow Darken in Android&nbsp; <i class="fab fa-android"></i>
+  ol
+    li
+      p First off, you need Virtual Hosts. This app is used to adjust requests and so make you connect to our server instead of Ubisoft's. Every link required is at bottom of the page.
+    li
+      p After you've downloaded and installed the app, you are required to install the hosts file, which gives information to the app about IP addresses.
+    li
+      p Launch the app, then click "RE-SELECT HOSTS FILE" at the bottom. After that, the app will request you to select a file. Select the hosts file you downloaded.
+      img(src="/data/tutorial1")
+    li
+      p After you've selected it, the app should turn VPN on, if it's first time it's turning on it should request permission to work as a VPN. Accept it, and it should turn on. If it didn't, turn it on by using the switch in the middle.
+      img(src="/data/tutorial3")
+      img(src="/data/tutorial2")
+  p And you are done! if the servers are UP, you should be able to connect it from Growtopia. Check statuses by joining our server.
+  h3 Resources
+  if paneldata.howtojoin
+    if paneldata.howtojoin.virtualhosts
+      a(href= paneldata.howtojoin.virtualhosts)
+        <button><i class fa fa-download></i>Download VirtualHosts by XFalcon</button>
+    else
+      button.disabled VirtualHosts is not available!
+  if paneldata.howtojoin
+    if paneldata.howtojoin.hostsfile
+      a(href= paneldata.howtojoin.hostsfile)
+        <button><i class fa fa-download></i>Download Android Hosts File</button>
+    else
+      button.disabled Android Hosts file is not available!

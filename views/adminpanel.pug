@@ -1,0 +1,9 @@
+include head.pug
+div.content
+  p.mentionrequired Required
+  form(method="post" action="/adminLoginPost")
+    p.required Username
+    input(type="text" name="username" placeholder="Username" required)
+    p.required Password
+    input(type="password" name="password" placeholder="Password" required)
+    <button type="submit"><i class="fa fa-share"></i>&nbsp; Log in</button>
